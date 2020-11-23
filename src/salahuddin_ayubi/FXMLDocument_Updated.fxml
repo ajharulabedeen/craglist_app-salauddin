@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salahuddin_ayubi.FXMLDocumentController">
+   <children>
+      <TabPane layoutX="35.0" layoutY="36.0" prefHeight="881.0" prefWidth="1177.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="City Manager">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.058287795992714025, 0.8706739526411658" layoutX="44.0" layoutY="97.0" prefHeight="852.0" prefWidth="1177.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="850.0" prefWidth="474.0">
+                                 <children>
+                                    <Label layoutX="28.0" layoutY="50.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="ID" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="90.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="State" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="130.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="City" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="170.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Zipcode" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="210.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Program" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="250.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Phone" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="28.0" layoutY="290.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="URL" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="20.0" layoutY="330.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Catagory" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="110.0" layoutY="394.0" mnemonicParsing="false" onAction="#save_advertisement_button_action" text="Save" />
+                                    <Button layoutX="166.0" layoutY="394.0" mnemonicParsing="false" onAction="#clear_advertisement_button_action" text="Clear" />
+                                    <TextField fx:id="advertisement_id" layoutX="109.0" layoutY="50.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="advertisement_state" layoutX="100.0" layoutY="90.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="advertisement_city" layoutX="100.0" layoutY="130.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="advertisement_zipcode" layoutX="107.0" layoutY="170.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="advertisement_program" layoutX="100.0" layoutY="210.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="advertisement_phone" layoutX="100.0" layoutY="250.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="advertisement_url" layoutX="93.0" layoutY="290.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="advertisement_catagory" layoutX="93.0" layoutY="330.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <CheckBox fx:id="advertisement_confirmation" layoutX="254.0" layoutY="398.0" mnemonicParsing="false" text="Show Confirmation" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: khaki;">
+                                 <children>
+                                    <TableView fx:id="advertisements_table" layoutX="151.0" layoutY="47.0" onMouseClicked="#cityManager_city_table_mouse_double_click_action" prefHeight="803.0" prefWidth="899.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+                                      <columns>
+                                        <TableColumn fx:id="advertisements_table_column_id" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="advertisements_table_column_state" prefWidth="75.0" text="State" />
+                                          <TableColumn fx:id="advertisements_table_column_city" prefWidth="75.0" text="City" />
+                                          <TableColumn fx:id="advertisements_table_column_zipcode" prefWidth="75.0" text="Zipcode" />
+                                          <TableColumn fx:id="advertisements_table_column_program" prefWidth="75.0" text="Program" />
+                                          <TableColumn fx:id="advertisements_table_column_phone" prefWidth="75.0" text="Phone" />
+                                          <TableColumn fx:id="advertisements_table_column_url" prefWidth="75.0" text="URL" />
+                                          <TableColumn fx:id="advertisements_table_column_catagory" prefWidth="75.0" text="Catagory" />
+                                          <TableColumn fx:id="advertisements_table_column_date" prefWidth="75.0" text="Date" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="34.0" layoutY="14.0" mnemonicParsing="false" onAction="#delete_advertisement_button_action" text="Delete" />
+                                    <Button layoutX="109.0" layoutY="14.0" mnemonicParsing="false" onAction="#edit_advertisement_button_action" text="Edit" />
+                                    <Button layoutX="166.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh_advertisement_button_action" text="Refresh" />
+                                    <TextField fx:id="city_manager_textField_search" layoutX="231.0" layoutY="14.0" onKeyReleased="#search_textField_key_realsed_action" prefHeight="25.0" prefWidth="255.0" />
+                                    <RadioButton fx:id="city_manager_radioButton_catagory" layoutX="494.0" layoutY="18.0" mnemonicParsing="false" text="Catagory">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="search_catagory" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="city_manager_radioButton_city" layoutX="582.0" layoutY="18.0" mnemonicParsing="false" text="City" toggleGroup="$search_catagory" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Label layoutX="15.0" layoutY="11.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="City ID" textAlignment="RIGHT" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="11.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="advertisement_generate_textField_city_id" layoutX="14.0" layoutY="38.0" prefHeight="25.0" prefWidth="151.0" AnchorPane.topAnchor="38.0" />
+                                    <TableView fx:id="advertisement_generation_table" layoutY="60.0" prefHeight="743.0" prefWidth="768.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+                                       <columns>
+                                          <TableColumn fx:id="advertisement_generation_table_column_index" prefWidth="75.0" text="Index" />
+                                          <TableColumn fx:id="advertisement_generation_table_column_city_id" prefWidth="113.0" text="City ID" />
+                                          <TableColumn fx:id="advertisement_generation_table_column_number_of_adds" prefWidth="113.0" text="Number of Add" />
+                                          <TableColumn fx:id="advertisement_generation_table_column_catagory" prefWidth="75.0" text="Catagory" />
+                                       </columns>
+                                    </TableView>
+                                    <Button layoutX="104.0" layoutY="67.0" minWidth="50.0" mnemonicParsing="false" onAction="#add_advertisement_generator_clear_button_action" prefHeight="25.0" prefWidth="73.0" text="Add" />
+                                    <Label layoutX="175.0" layoutY="11.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Number of Add" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="advertisement_generate_textField_number_of_ads" layoutX="175.0" layoutY="38.0" prefHeight="25.0" prefWidth="150.0" />
+                                    <Button layoutX="195.0" layoutY="67.0" minWidth="50.0" mnemonicParsing="false" onAction="#export_advertisement_generator_clear_button_action" prefHeight="25.0" prefWidth="73.0" text="Export" />
+                                    <CheckBox fx:id="advertisement_generate_CheckBox_auto_add" layoutX="18.0" layoutY="70.0" mnemonicParsing="false" text="Auto Add" />
+                                    <Label layoutX="336.0" layoutY="12.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Catagory" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="advertisement_generate_textField_catagoty" editable="false" layoutX="335.0" layoutY="39.0" prefHeight="25.0" prefWidth="150.0" />
+                                    <Button layoutX="289.0" layoutY="66.0" minWidth="50.0" mnemonicParsing="false" onAction="#clear_advertisement_generator_clear_button_action" prefHeight="25.0" prefWidth="73.0" text="Clear" />
+                                    <Button layoutX="373.0" layoutY="67.0" mnemonicParsing="false" onAction="#delete_advertisement_generator_clear_button_action" text="Remove" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Title Manager">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.3608510638297872" prefHeight="852.0" prefWidth="1177.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="850.0" prefWidth="480.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="89.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Title" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="titleManager_button_save" layoutX="102.0" layoutY="11.0" mnemonicParsing="false" onAction="#titleManager_save_title_button_action" text="New Save" />
+                                    <Button layoutX="186.0" layoutY="11.0" mnemonicParsing="false" onAction="#titleManager_clear_button_action" text="Clear" />
+                                    <TextArea fx:id="titleManager_textArea_title" layoutX="96.0" layoutY="90.0" prefHeight="756.0" prefWidth="311.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="82.0" />
+                                    <Label layoutX="10.0" layoutY="48.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Catagory">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="titleManager_textField_catagory" layoutX="100.0" layoutY="48.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <CheckBox fx:id="titleManager_confirmation" layoutX="281.0" layoutY="13.0" mnemonicParsing="false" text="Show Confirmation" />
+                                    <Button fx:id="titleManager_button_edit_save" layoutX="17.0" layoutY="11.0" mnemonicParsing="false" onAction="#titleManager_edit_save_title_button_action" text="Save Edit" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: khaki;">
+                                 <children>
+                                    <TableView fx:id="titles_table" layoutX="151.0" layoutY="47.0" prefHeight="803.0" prefWidth="899.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+                                       <columns>
+                                          <TableColumn fx:id="titles_table_column_id" prefWidth="75.0" text="ID" />
+                                          <TableColumn fx:id="titles_table_column_title" prefWidth="218.0" text="Title" />
+                                          <TableColumn fx:id="titles_table_column_catagory" prefWidth="218.0" text="Catagory" />
+                                          <TableColumn fx:id="titles_table_column_date" prefWidth="218.0" text="Date" />
+                                       </columns>
+                                    </TableView>
+                                    <Button layoutX="34.0" layoutY="14.0" mnemonicParsing="false" onAction="#titleManager_delete_title_button_action" text="Delete" />
+                                    <Button layoutX="109.0" layoutY="14.0" mnemonicParsing="false" onAction="#titleManager_edit_title_button_action" text="Edit" />
+                                    <Button layoutX="169.0" layoutY="14.0" mnemonicParsing="false" onAction="#titleManager_refresh_title_button_action" text="Refresh" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Body Manager">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" layoutX="60.0" layoutY="14.0" prefHeight="771.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="850.0" prefWidth="480.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="89.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Body" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="bodyManager_button_save_new" layoutX="100.0" layoutY="11.0" mnemonicParsing="false" onAction="#bodyManager_save_body_button_action" text="Save New" />
+                                    <Button fx:id="bodyManager_clear_button_action" layoutX="174.0" layoutY="11.0" mnemonicParsing="false" onAction="#bodyManager_clear_button_action" text="Clear" />
+                                    <TextArea fx:id="bodyManager_textArea_body" layoutX="96.0" layoutY="90.0" prefHeight="718.0" prefWidth="661.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="82.0" />
+                                    <Label layoutX="10.0" layoutY="48.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: cyan; -fx-alignment: center;" text="Catagory">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bodyManager_textField_catagory" layoutX="100.0" layoutY="48.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" />
+                                    <Button fx:id="bodyManager_button_save_edit" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#bodyManager_edit_save_body_button_action" text="Save Edit" />
+                                    <CheckBox fx:id="bodyManager_checkBox_showNotification" layoutX="242.0" layoutY="15.0" mnemonicParsing="false" text="Show Confirmation" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="811.0" prefWidth="607.0" style="-fx-background-color: khaki;">
+                                 <children>
+                                    <TableView fx:id="body_table" layoutX="-2.0" layoutY="59.0" prefHeight="700.0" prefWidth="669.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                       <columns>
+                                          <TableColumn fx:id="body_table_column_id" prefWidth="75.0" text="ID" />
+                                          <TableColumn fx:id="body_table_column_body" prefWidth="218.0" text="Body" />
+                                          <TableColumn fx:id="body_table_column_catagory" prefWidth="218.0" text="Catagory" />
+                                          <TableColumn fx:id="body_table_column_date" prefWidth="218.0" text="Date" />
+                                       </columns>
+                                    </TableView>
+                                    <Button fx:id="bodyManager_delete_body_button_action" layoutX="34.0" layoutY="14.0" mnemonicParsing="false" onAction="#bodyManager_delete_body_button_action" text="Delete" />
+                                    <Button layoutX="109.0" layoutY="14.0" mnemonicParsing="false" onAction="#bodyManager_edit_body_button_action" text="Edit" />
+                                    <Button layoutX="161.0" layoutY="14.0" mnemonicParsing="false" onAction="#bodyManager_refresh_body_button_action" text="Refresh" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
